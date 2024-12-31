@@ -63,6 +63,30 @@
         .btn-primary:hover {
             background-color: #0056b3;
         }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+        }
+
+        .impact-section {
+            background-color: #f8f9fa;
+            padding: 40px 0;
+        }
+
+        .impact-card {
+            margin: 20px 0;
+            border: 1px solid #007bff;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .impact-card i {
+            font-size: 3rem;
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+
 
         footer {
             background-color: #007bff;
@@ -115,6 +139,119 @@
             font-size: 18px;
             text-align: center;
         }
+
+        /* Impact Section */
+#impact {
+    background-color: #f8f9fa; /* Light background for impact section */
+    padding: 60px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px; /* Ensure a minimum height */
+}
+
+#impact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff; /* Blue color for heading */
+}
+
+#impact p {
+    font-size: 1.2rem;
+    color: #555; /* Dark gray for the paragraph text */
+    line-height: 1.6;
+    margin-bottom: 30px;
+    max-width: 800px; /* Restrict paragraph width for readability */
+}
+
+/* Help Section */
+#help {
+    padding: 60px 20px;
+    background-color: #ffffff; /* White background for help section */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+}
+
+#help h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+#help p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    max-width: 800px; /* Restrict paragraph width for readability */
+}
+
+/* Cards for Help Section */
+.help-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px; /* Center the cards container */
+}
+
+.help-card {
+    background: #f8f9fa; /* Light background for each card */
+    border-radius: 10px;
+    padding: 30px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.help-card i {
+    color: #007bff; /* Blue icon color */
+    margin-bottom: 15px;
+}
+
+.help-card h3 {
+    font-size: 1.5rem;
+    color: #333; /* Dark gray for heading */
+    margin-bottom: 15px;
+}
+
+.help-card p {
+    font-size: 1rem;
+    color: #555; /* Dark gray for paragraph */
+}
+
+.help-card:hover {
+    transform: translateY(-10px); /* Hover effect: moves up */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #impact h2,
+    #help h2 {
+        font-size: 2rem; /* Smaller headings on mobile */
+    }
+
+    .help-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .help-card {
+        width: 100%; /* Cards take full width on mobile */
+        margin-bottom: 20px;
+    }
+}
+
     </style>
 </head>
 
@@ -141,14 +278,51 @@
 
     <!-- Hero Section -->
     <header class="hero" id="home">
-        <h1>समाज को आर्थिक स्वतंत्रता की ओर</h1>
-        <p>हम कर्ज से राहत, कानूनी सुरक्षा और स्थिरता प्रदान करते हैं।</p>
+        <h1>आपकी मदद से एक नई शुरुआत, कर्ज़ से मुक्ति की राह!</h1>
+        <p>With Your Help, A New Beginning, Freedom from Debt!</p>
         <div>
-            <a href="#join" class="btn btn-primary">हमसे जुड़ें</a>
-            <a href="#donate" class="btn btn-primary">डोनेट करें</a>
-            <a href="Aboutus.html" class="btn btn-primary">अधिक जानें</a>
+            <a href="#join" class="btn btn-primary">Join Us</a>
+            <a href="#donate" class="btn btn-primary">Donate</a>
+            <a href="Aboutus.html" class="btn btn-primary">About Us</a>
         </div>
     </header>
+
+
+
+
+    <div class="container">
+        <!-- Impact Section -->
+        <section id="impact" class="section impact">
+            <h2>Our Impact</h2>
+            <p>We have assisted over 10,000 individuals in overcoming financial challenges and creating sustainable futures. Our programs focus on education, financial literacy, and community empowerment.</p>
+        </section>
+    
+        <!-- How You Can Help Section -->
+        <section id="help" class="section help">
+            <h2>How You Can Help (आप कैसे मदद कर सकते हैं)?</h2>
+            <p>हमारी एनजीओ को मदद देने के कई तरीके हैं, और आपकी सहायता से हम और अधिक लोगों की मदद कर सकते हैं।</p>
+            <p>Here’s how you can make a difference:</p>
+            <div class="help-cards">
+                <div class="help-card">
+                    <i class="fas fa-donate fa-3x"></i>
+                    <h3>Donate (दान करें)</h3>
+                    <p>Donate to support our work and help us assist more people in need.<br>दीनदयाल प्रयास के लिए दान करें।</p>
+                </div>
+                <div class="help-card">
+                    <i class="fas fa-users fa-3x"></i>
+                    <h3>Volunteer (स्वयंसेवक बनें)</h3>
+                    <p>Become a volunteer and assist us in providing support to those in need.<br>समय दें और हमारी मदद से दूसरों की सहायता करें।</p>
+                </div>
+                <div class="help-card">
+                    <i class="fas fa-bullhorn fa-3x"></i>
+                    <h3>Spread Awareness (जागरूकता फैलाएं)</h3>
+                    <p>Spread the word through social media, friends, and family to raise awareness about debt issues.<br>कर्ज़ के बारे में जागरूकता फैलाएं।</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
 
     <!-- Join Us Section -->
     <div class="container my-5" id="join">
@@ -356,6 +530,38 @@
             <li>10% आपातकालीन फंड - "आपातकालीन संकटों से निपटने के लिए तैयार।"</li>
             <li>50% निवेश - "कृषि, पर्यटन, और फूड वेस्ट मैनेजमेंट जैसे क्षेत्रों में निवेश।"</li>
         </ul>
+    </div>
+
+
+     <!-- Our Impact Section -->
+     <div class="container impact-section">
+        <h2 class="section-title">Our Impact (हमारा प्रभाव)</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="impact-card">
+                    <i class="fas fa-chart-line"></i>
+                    <h5>Economic Strength (आर्थिक मजबूती)</h5>
+                    <p>कर्ज मुक्त परिवारों से मजबूत समाज का निर्माण।<br>
+                        Building a strong society by empowering debt-free families.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="impact-card">
+                    <i class="fas fa-leaf"></i>
+                    <h5>Cleanliness & Environment (स्वच्छता और पर्यावरण)</h5>
+                    <p>कचरा प्रबंधन, गोबर से जैविक खाद, और गोमूत्र से आयुर्वेदिक उत्पादों के निर्माण के माध्यम से पर्यावरण की रक्षा।<br>
+                        Promoting waste management, producing bio-fertilizers, and Ayurvedic products from cow dung and urine.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="impact-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h5>Employment (रोजगार)</h5>
+                    <p>लाखों रोजगार के अवसर उत्पन्न करना।<br>
+                        Creating millions of employment opportunities.</p>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
