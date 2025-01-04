@@ -63,6 +63,7 @@
         .btn-primary:hover {
             background-color: #0056b3;
         }
+
         .section-title {
             text-align: center;
             margin: 40px 0 20px;
@@ -141,117 +142,217 @@
         }
 
         /* Impact Section */
-#impact {
-    background-color: #f8f9fa; /* Light background for impact section */
-    padding: 60px 20px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px; /* Ensure a minimum height */
-}
+        #impact {
+            background-color: #f8f9fa;
+            /* Light background for impact section */
+            padding: 60px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+            /* Ensure a minimum height */
+        }
 
-#impact h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #007bff; /* Blue color for heading */
-}
+        #impact h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+            /* Blue color for heading */
+        }
 
-#impact p {
-    font-size: 1.2rem;
-    color: #555; /* Dark gray for the paragraph text */
-    line-height: 1.6;
-    margin-bottom: 30px;
-    max-width: 800px; /* Restrict paragraph width for readability */
-}
+        #impact p {
+            font-size: 1.2rem;
+            color: #555;
+            /* Dark gray for the paragraph text */
+            line-height: 1.6;
+            margin-bottom: 30px;
+            max-width: 800px;
+            /* Restrict paragraph width for readability */
+        }
 
-/* Help Section */
-#help {
-    padding: 60px 20px;
-    background-color: #ffffff; /* White background for help section */
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-}
+        /* Help Section */
+        #help {
+            padding: 60px 20px;
+            background-color: #ffffff;
+            /* White background for help section */
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 300px;
+        }
 
-#help h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    color: #007bff;
-}
+        #help h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #007bff;
+        }
 
-#help p {
-    font-size: 1.2rem;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 20px;
-    max-width: 800px; /* Restrict paragraph width for readability */
-}
+        #help p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            max-width: 800px;
+            /* Restrict paragraph width for readability */
+        }
 
-/* Cards for Help Section */
-.help-cards {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
-    margin-top: 20px;
-    width: 100%;
-    max-width: 1200px; /* Center the cards container */
-}
+        /* Cards for Help Section */
+        .help-cards {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            width: 100%;
+            max-width: 1200px;
+            /* Center the cards container */
+        }
 
-.help-card {
-    background: #f8f9fa; /* Light background for each card */
-    border-radius: 10px;
-    padding: 30px;
-    width: 280px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
+        .help-card {
+            background: #f8f9fa;
+            /* Light background for each card */
+            border-radius: 10px;
+            padding: 30px;
+            width: 280px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
 
-.help-card i {
-    color: #007bff; /* Blue icon color */
-    margin-bottom: 15px;
-}
+        .help-card i {
+            color: #007bff;
+            /* Blue icon color */
+            margin-bottom: 15px;
+        }
 
-.help-card h3 {
-    font-size: 1.5rem;
-    color: #333; /* Dark gray for heading */
-    margin-bottom: 15px;
-}
+        .help-card h3 {
+            font-size: 1.5rem;
+            color: #333;
+            /* Dark gray for heading */
+            margin-bottom: 15px;
+        }
 
-.help-card p {
-    font-size: 1rem;
-    color: #555; /* Dark gray for paragraph */
-}
+        .help-card p {
+            font-size: 1rem;
+            color: #555;
+            /* Dark gray for paragraph */
+        }
 
-.help-card:hover {
-    transform: translateY(-10px); /* Hover effect: moves up */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
-}
+        .help-card:hover {
+            transform: translateY(-10px);
+            /* Hover effect: moves up */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            /* Stronger shadow on hover */
+        }
 
-/* Responsive design */
-@media (max-width: 768px) {
-    #impact h2,
-    #help h2 {
-        font-size: 2rem; /* Smaller headings on mobile */
-    }
+        /* Responsive design */
+        @media (max-width: 768px) {
 
-    .help-cards {
-        flex-direction: column;
-        align-items: center;
-    }
+            #impact h2,
+            #help h2 {
+                font-size: 2rem;
+                /* Smaller headings on mobile */
+            }
 
-    .help-card {
-        width: 100%; /* Cards take full width on mobile */
-        margin-bottom: 20px;
-    }
-}
+            .help-cards {
+                flex-direction: column;
+                align-items: center;
+            }
 
+            .help-card {
+                width: 100%;
+                /* Cards take full width on mobile */
+                margin-bottom: 20px;
+            }
+        }
+
+        /* Custom styles for donation buttons */
+        .donation-btn {
+            transition: background-color 0.3s, transform 0.3s;
+            background-color: #007bff;
+            /* Default blue color */
+            color: white;
+            /* Text color */
+        }
+
+        .donation-btn:hover {
+            background-color: #0056b3;
+            /* Darker blue on hover */
+            transform: scale(1.05);
+            /* Slightly enlarge the button */
+        }
+
+        .donation-option {
+            margin-bottom: 15px;
+            /* Space between donation options */
+            padding: 20px;
+            /* Padding inside the card */
+            border-radius: 10px;
+            /* Rounded corners */
+            transition: background-color 0.3s;
+            /* Smooth transition for background color */
+            background-color: #f8f9fa;
+            /* Light background color for cards */
+        }
+
+        .donation-option:hover {
+            background-color: #e2e6ea;
+            /* Change background color on hover */
+        }
+
+        /* Make input fields smaller */
+        .donor-details input {
+            width: 90%;
+            /* Adjust width as needed */
+            margin-bottom: 10px;
+            /* Space between input fields */
+        }
+
+        /* Optional: Add some padding to the donation options */
+        .donation-options {
+            padding-left: 20px;
+            /* Add padding to the left */
+        }
+
+        /* Optional: Add some margin to the donor details */
+        .donor-details {
+            padding-right: 20px;
+            /* Add padding to the right */
+        }
+
+        #donate {
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #c7e3fe;
+            transition: background-color 0.3s;
+        }
+
+        #donate:hover {
+            transition: background-color 0.3s;
+            background-color: #9cfea5;
+        }
+
+        /* CSS for Success Stories Cards */
+
+        .success-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .success-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            margin-bottom: 40px;
+            color: #007bff;
+            /* Blue color for section title */
+        }
     </style>
 </head>
 
@@ -294,9 +395,42 @@
         <!-- Impact Section -->
         <section id="impact" class="section impact">
             <h2>Our Impact</h2>
-            <p>We have assisted over 10,000 individuals in overcoming financial challenges and creating sustainable futures. Our programs focus on education, financial literacy, and community empowerment.</p>
+            <p>We have assisted over 10,000 individuals in overcoming financial challenges and creating sustainable
+                futures. Our programs focus on education, financial literacy, and community empowerment.</p>
         </section>
-    
+
+        <div class="container impact-section">
+            <!-- <h2 class="section-title">Our Impact (हमारा प्रभाव)</h2> -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <i class="fas fa-chart-line"></i>
+                        <h5>Economic Strength (आर्थिक मजबूती)</h5>
+                        <p>कर्ज मुक्त परिवारों से मजबूत समाज का निर्माण।<br>
+                            Building a strong society by empowering debt-free families.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <i class="fas fa-leaf"></i>
+                        <h5>Cleanliness & Environment (स्वच्छता और पर्यावरण)</h5>
+                        <p>कचरा प्रबंधन, गोबर से जैविक खाद, और गोमूत्र से आयुर्वेदिक उत्पादों के निर्माण के माध्यम से
+                            पर्यावरण की रक्षा।<br>
+                            Promoting waste management, producing bio-fertilizers, and Ayurvedic products from cow dung
+                            and urine.</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="impact-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h5>Employment (रोजगार)</h5>
+                        <p>लाखों रोजगार के अवसर उत्पन्न करना।<br>
+                            Creating millions of employment opportunities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- How You Can Help Section -->
         <section id="help" class="section help">
             <h2>How You Can Help (आप कैसे मदद कर सकते हैं)?</h2>
@@ -306,23 +440,26 @@
                 <div class="help-card">
                     <i class="fas fa-donate fa-3x"></i>
                     <h3>Donate (दान करें)</h3>
-                    <p>Donate to support our work and help us assist more people in need.<br>दीनदयाल प्रयास के लिए दान करें।</p>
+                    <p>Donate to support our work and help us assist more people in need.<br>दीनदयाल प्रयास के लिए दान
+                        करें।</p>
                 </div>
                 <div class="help-card">
                     <i class="fas fa-users fa-3x"></i>
                     <h3>Volunteer (स्वयंसेवक बनें)</h3>
-                    <p>Become a volunteer and assist us in providing support to those in need.<br>समय दें और हमारी मदद से दूसरों की सहायता करें।</p>
+                    <p>Become a volunteer and assist us in providing support to those in need.<br>समय दें और हमारी मदद
+                        से दूसरों की सहायता करें।</p>
                 </div>
                 <div class="help-card">
                     <i class="fas fa-bullhorn fa-3x"></i>
                     <h3>Spread Awareness (जागरूकता फैलाएं)</h3>
-                    <p>Spread the word through social media, friends, and family to raise awareness about debt issues.<br>कर्ज़ के बारे में जागरूकता फैलाएं।</p>
+                    <p>Spread the word through social media, friends, and family to raise awareness about debt
+                        issues.<br>कर्ज़ के बारे में जागरूकता फैलाएं।</p>
                 </div>
             </div>
         </section>
     </div>
-    
-    
+
+
 
     <!-- Join Us Section -->
     <div class="container my-5" id="join">
@@ -339,36 +476,44 @@
         <h2 class="section-title">डोनेशन करने का विकल्प</h2>
         <p>आपका योगदान हमारे कर्ज मुक्त अभियान को बल देगा।</p>
 
-        <!-- Donor Details Form -->
-        <div class="donor-details">
-            <input type="text" id="donorName" class="form-control my-2" placeholder="अपना नाम दर्ज करें" required />
-            <input type="email" id="donorEmail" class="form-control my-2" placeholder="अपना ईमेल दर्ज करें" required />
-            <input type="tel" id="donorPhone" class="form-control my-2" placeholder="अपना फ़ोन नंबर दर्ज करें"
-                required />
-        </div>
+        <div class="row">
+            <!-- Donor Details Form -->
+            <div class="col-md-6">
+                <div class="donor-details">
+                    <input type="text" id="donorName" class="form-control my-2" placeholder="अपना नाम दर्ज करें"
+                        required />
+                    <input type="email" id="donorEmail" class="form-control my-2" placeholder="अपना ईमेल दर्ज करें"
+                        required />
+                    <input type="tel" id="donorPhone" class="form-control my-2" placeholder="अपना फ़ोन नंबर दर्ज करें"
+                        required />
+                </div>
+            </div>
 
-        <!-- Donation Options -->
-        <div class="donation-options">
-            <div class="donation-option">
-                <h5>₹500</h5>
-                <button class="btn btn-primary" onclick="makePayment(500)">डोनेट करें</button>
-            </div>
-            <div class="donation-option">
-                <h5>₹1,000</h5>
-                <button class="btn btn-primary" onclick="makePayment(1000)">डोनेट करें</button>
-            </div>
-            <div class="donation-option">
-                <h5>₹5,000</h5>
-                <button class="btn btn-primary" onclick="makePayment(5000)">डोनेट करें</button>
-            </div>
-            <div class="donation-option">
-                <h5>₹10,000</h5>
-                <button class="btn btn-primary" onclick="makePayment(10000)">डोनेट करें</button>
-            </div>
-            <div class="donation-option">
-                <h5>या अपनी राशि डालें</h5>
-                <input type="number" id="customAmount" class="form-control" placeholder="राशि डालें" />
-                <button class="btn btn-primary" onclick="customPayment()">डोनेट करें</button>
+            <!-- Donation Options -->
+            <div class="col-md-6">
+                <div class="donation-options">
+                    <div class="donation-option card">
+                        <h5>₹500</h5>
+                        <button class="btn btn-primary donation-btn" onclick="makePayment(500)">डोनेट करें</button>
+                    </div>
+                    <div class="donation-option card">
+                        <h5>₹1,000</h5>
+                        <button class="btn btn-primary donation-btn" onclick="makePayment(1000)">डोनेट करें</button>
+                    </div>
+                    <div class="donation-option card">
+                        <h5>₹5,000</h5>
+                        <button class="btn btn-primary donation-btn" onclick="makePayment(5000)">डोनेट करें</button>
+                    </div>
+                    <div class="donation-option card">
+                        <h5>₹10,000</h5>
+                        <button class="btn btn-primary donation-btn" onclick="makePayment(10000)">डोनेट करें</button>
+                    </div>
+                    <div class="donation-option card">
+                        <h5>या अपनी राशि डालें</h5>
+                        <input type="number" id="customAmount" class="form-control" placeholder="राशि डालें" />
+                        <button class="btn btn-primary donation-btn" onclick="customPayment()">डोनेट करें</button>
+                    </div>
+                </div>
             </div>
         </div>
         <p>आपका योगदान हमारी योजनाओं को साकार करेगा!</p>
@@ -532,46 +677,55 @@
         </ul>
     </div>
 
-
-     <!-- Our Impact Section -->
-     <div class="container impact-section">
-        <h2 class="section-title">Our Impact (हमारा प्रभाव)</h2>
+    <!-- Success Stories Section -->
+    <div class="container my-5" id="success-stories">
+        <h2 class="section-title text-center">सफलता की कहानियाँ</h2>
         <div class="row">
-            <div class="col-md-4">
-                <div class="impact-card">
-                    <i class="fas fa-chart-line"></i>
-                    <h5>Economic Strength (आर्थिक मजबूती)</h5>
-                    <p>कर्ज मुक्त परिवारों से मजबूत समाज का निर्माण।<br>
-                        Building a strong society by empowering debt-free families.</p>
+            <!-- Success Story 1 -->
+            <div class="col-md-6">
+                <div class="card mb-4 success-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Success Story 1</h5>
+                        <p class="card-text">
+                            "मैंने कर्ज़ के कारण आत्महत्या के बारे में सोचा था, लेकिन इस एनजीओ ने मेरी मदद की। अब मैं
+                            कर्ज़ मुक्त हूं और एक नई शुरुआत कर रहा हूं।"
+                        </p>
+                        <p class="card-text">
+                            "I was thinking about suicide because of debt, but this NGO helped me. Today, I am debt-free
+                            and starting anew."
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="impact-card">
-                    <i class="fas fa-leaf"></i>
-                    <h5>Cleanliness & Environment (स्वच्छता और पर्यावरण)</h5>
-                    <p>कचरा प्रबंधन, गोबर से जैविक खाद, और गोमूत्र से आयुर्वेदिक उत्पादों के निर्माण के माध्यम से पर्यावरण की रक्षा।<br>
-                        Promoting waste management, producing bio-fertilizers, and Ayurvedic products from cow dung and urine.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="impact-card">
-                    <i class="fas fa-briefcase"></i>
-                    <h5>Employment (रोजगार)</h5>
-                    <p>लाखों रोजगार के अवसर उत्पन्न करना।<br>
-                        Creating millions of employment opportunities.</p>
+
+            <!-- Success Story 2 -->
+            <div class="col-md-6">
+                <div class="card mb-4 success-card">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Success Story 2</h5>
+                        <p class="card-text">
+                            "मुझे विश्वास नहीं था कि मेरी ज़िन्दगी फिर से पटरी पर आ सकती है, लेकिन इनकी मदद से अब मैं
+                            अपने कर्ज़ का सही तरीके से निपटारा कर रहा हूं।"
+                        </p>
+                        <p class="card-text">
+                            "I didn’t believe my life could get back on track, but with their help, I am now managing my
+                            debt in the right way."
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Footer -->
     <footer class="text-center">
         <div class="container">
             <h5>संपर्क जानकारी</h5>
             <p><strong>ईमेल:</strong> <a href="mailto:info@debtfreefoundation.com">info@debtfreefoundation.com</a></p>
-            <p><strong>फोन:</strong> +91-8427986010</p>
-            <p><strong>सोशल मीडिया लिंक:</strong> <a href="#">Facebook</a>, <a href="#">Twitter</a>, <a
-                    href="#">Instagram</a>, <a href="#">LinkedIn</a></p>
+            <p><strong>फोन:</strong><a href="https://wa.me/918427986010">91-8427986010</a></p>
+            <p><strong>सोशल मीडिया लिंक:</strong> <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a
+                    href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
             <p><strong>कानूनी नोटिस:</strong> "कर्ज मुक्त भारत अभियान का हिस्सा बनने के लिए आपका स्वागत है!"</p>
         </div>
     </footer>
