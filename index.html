@@ -327,7 +327,7 @@
         #donate {
             border: 1px solid black;
             border-radius: 5px;
-            background-color:  #f8f9fa;
+            background-color: #f8f9fa;
             transition: background-color 0.3s;
         }
 
@@ -348,6 +348,41 @@
             color: #007bff;
             /* Blue color for section title */
         }
+
+
+        /* Animation for member cards */
+        .member-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: scale(1.05);
+            /* Scale up the card */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            /* Add shadow on hover */
+        }
+        #members p{
+            text-align: center;
+        }
+
+
+        /* Background for the objectives section */
+    #objectives {
+        background-color: #f0f8ff; /* Light background color */
+        padding: 40px 0; /* Add some padding */
+        border-radius: 10px; /* Rounded corners */
+    }
+
+    /* Animation for objective cards */
+    .objective-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .objective-card:hover {
+        transform: translateY(-10px); /* Move the card up on hover */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        border-radius: 20%;
+    }
     </style>
 </head>
 
@@ -356,7 +391,10 @@
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">indebtfreefoundation</a>
+            <a class="navbar-brand" href="#">
+                <img src="logo.jpg" alt="Indebt Free Foundation Logo" style="height: 40px; margin-right: 10px;">
+                Indebt Free Foundation
+            </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -560,36 +598,38 @@
     <div class="container my-5" id="members">
         <h2 class="section-title">सदस्य जोड़ने का प्रदर्शन</h2>
         <p>डायरेक्टर के आधार पर व्यवस्थित सदस्य का विवरण:</p>
-        <table class="table">
-            <thead>
-                <tr>
-                    <th>सदस्य का नाम</th>
-                    <th>संपर्क जानकारी</th>
-                    <th>जोड़ने की तारीख</th>
-                    <th>प्रोफ़ाइल चित्र</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>राधिका शर्मा</td>
-                    <td>radhika@example.com</td>
-                    <td>2023-01-15</td>
-                    <td><img src="https://via.placeholder.com/50" alt="Profile" class="img-fluid"></td>
-                </tr>
-                <tr>
-                    <td>सौरव मेहता</td>
-                    <td>saurav@example.com</td>
-                    <td>2023-02-20</td>
-                    <td><img src="https://via.placeholder.com/50" alt="Profile" class="img-fluid"></td>
-                </tr>
-                <tr>
-                    <td>नीता वर्मा</td>
-                    <td>neeta@example.com</td>
-                    <td>2023-03-10</td>
-                    <td><img src="https://via.placeholder.com/50" alt="Profile" class="img-fluid"></td>
-                </tr>
-            </tbody>
-        </table>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 text-center member-card">
+                    <img src="https://via.placeholder.com/150" alt="राधिका शर्मा" class="card-img-top img-fluid"
+                        style="height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">राधिका शर्मा</h5>
+                        <p class="card-text text-center">जोड़ने की तारीख: 2023-01-15</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 text-center member-card">
+                    <img src="https://via.placeholder.com/150" alt="सौरव मेहता" class="card-img-top img-fluid"
+                        style="height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">सौरव मेहता</h5>
+                        <p class="card-text text-center">जोड़ने की तारीख: 2023-02-20</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 text-center member-card">
+                    <img src="https://via.placeholder.com/150" alt="नीता वर्मा" class="card-img-top img-fluid"
+                        style="height: 150px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">नीता वर्मा</h5>
+                        <p class="card-text text-center">जोड़ने की तारीख: 2023-03-10</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Donation and Contribution Tracking Section -->
@@ -609,17 +649,16 @@
         <h2 class="section-title">फाउंडेशन के उद्देश्य और रणनीतियाँ</h2>
         <div class="row">
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 objective-card">
                     <div class="card-body text-center">
                         <i class="icon fas fa-money-bill-wave" style="font-size: 3rem; color: #007bff;"></i>
                         <h5 class="card-title">कर्ज से मुक्ति योजना:</h5>
-                        <p class="card-text">प्रत्येक सदस्य मासिक ₹1,000 का योगदान करेगा, जो कर्ज राहत में उपयोग होगा।
-                        </p>
+                        <p class="card-text">प्रत्येक सदस्य मासिक ₹1,000 का योगदान करेगा, जो कर्ज राहत में उपयोग होगा।</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 objective-card">
                     <div class="card-body text-center">
                         <i class="icon fas fa-leaf" style="font-size: 3rem; color: #007bff;"></i>
                         <h5 class="card-title">कृषि और पर्यटन में निवेश:</h5>
@@ -628,7 +667,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 objective-card">
                     <div class="card-body text-center">
                         <i class="icon fas fa-recycle" style="font-size: 3rem; color: #007bff;"></i>
                         <h5 class="card-title">फूड वेस्ट मैनेजमेंट:</h5>
@@ -637,7 +676,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 objective-card">
                     <div class="card-body text-center">
                         <i class="icon fas fa-user-graduate" style="font-size: 3rem; color: #007bff;"></i>
                         <h5 class="card-title">प्रशिक्षण और रोजगार:</h5>
@@ -646,7 +685,7 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="card mb-4">
+                <div class="card mb-4 objective-card">
                     <div class="card-body text-center">
                         <i class="icon fas fa-bullhorn" style="font-size: 3rem; color: #007bff;"></i>
                         <h5 class="card-title">राजनीतिक सक्रियता:</h5>
@@ -656,6 +695,7 @@
             </div>
         </div>
     </div>
+    
 
     <!-- How Your Contribution is Utilized Section -->
     <div class="container my-5" id="utilization">
@@ -719,9 +759,11 @@
             <h5>संपर्क जानकारी</h5>
             <p><strong>ईमेल:</strong> <a href="mailto:info@debtfreefoundation.com">info@debtfreefoundation.com</a></p>
             <p><strong>फोन:</strong><a href="https://wa.me/918427986010">91-8427986010</a></p>
-            <p><strong>सोशल मीडिया लिंक:</strong> <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a
-                    href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+            <p><strong>सोशल मीडिया लिंक:</strong> <a
+                    href="https://www.facebook.com/profile.php?id=61571589090667&mibextid=ZbWKwL">Facebook</a> | <a
+                    href="#">Twitter</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
             <p><strong>कानूनी नोटिस:</strong> "कर्ज मुक्त भारत अभियान का हिस्सा बनने के लिए आपका स्वागत है!"</p>
+            <p><strong>Design & Develop By ALMA Creators</strong></p>
         </div>
     </footer>
 
