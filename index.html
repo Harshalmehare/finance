@@ -361,39 +361,50 @@
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
             /* Add shadow on hover */
         }
-        #members p{
+
+        #members p {
             text-align: center;
         }
 
 
         /* Background for the objectives section */
-    #objectives {
-        background-color: #f0f8ff; /* Light background color */
-        padding: 40px 0; /* Add some padding */
-        border-radius: 10px; /* Rounded corners */
-    }
+        #objectives {
+            background-color: #f0f8ff;
+            /* Light background color */
+            padding: 40px 0;
+            /* Add some padding */
+            border-radius: 10px;
+            /* Rounded corners */
+        }
 
-    /* Animation for objective cards */
-    .objective-card {
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+        /* Animation for objective cards */
+        .objective-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-    .objective-card:hover {
-        transform: translateY(-10px); /* Move the card up on hover */
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
-        border-radius: 20%;
-    }
+        .objective-card:hover {
+            transform: translateY(-10px);
+            /* Move the card up on hover */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            /* Add shadow on hover */
+            border-radius: 20%;
+        }
 
-    .social-icon {
-        color: white; /* Icon color */
-        margin: 0 10px; /* Space between icons */
-        text-decoration: none; /* Remove underline */
-        transition: color 0.3s; /* Smooth color transition */
-    }
-    
-    .social-icon:hover {
-        color: #007bff; /* Change color on hover */
-    }
+        .social-icon {
+            color: white;
+            /* Icon color */
+            margin: 0 10px;
+            /* Space between icons */
+            text-decoration: none;
+            /* Remove underline */
+            transition: color 0.3s;
+            /* Smooth color transition */
+        }
+
+        .social-icon:hover {
+            color: white;
+            /* Change color on hover */
+        }
     </style>
 </head>
 
@@ -403,7 +414,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="logo.jpg" alt="Logo" style="height: 40px; margin-right: 9px;">
+                <img src="logo.png" alt="WRINNRAHAT FOUNDATION" style="height: 40px; margin-right: 10px;">
                 WRINNRAHAT FOUNDATION
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -515,6 +526,8 @@
         </iframe>
     </div>
 
+    <!-- Members Card Section -->
+    <!-- Members Card Section -->
     <div class="container my-5" style="max-width: 600px; margin: auto;">
         <div class="card text-center"
             style="border: 1px solid #007bff; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
@@ -548,10 +561,10 @@
 
             <!-- Donation Options -->
             <div class="col-md-6">
-                <div class="donation-options">
+                <!-- <div class="donation-options">
                     <div class="donation-option card">
                         <h5>₹500</h5>
-                        <button class="btn btn-primary donation-btn" onclick="makePayment(500)">डोनेट करें</button>
+                        <a href="Payment.html"><button class="btn btn-primary donation-btn" onclick="makePayment(500)">डोनेट करें</button></a>
                     </div>
                     <div class="donation-option card">
                         <h5>₹1,000</h5>
@@ -570,6 +583,10 @@
                         <input type="number" id="customAmount" class="form-control" placeholder="राशि डालें" />
                         <button class="btn btn-primary donation-btn" onclick="customPayment()">डोनेट करें</button>
                     </div>
+                </div> -->
+                <div class="donation-option card">
+                    <h5>Donation</h5>
+                    <a href="Payment.html"><button class="btn btn-primary donation-btn">डोनेट करें</button></a>
                 </div>
             </div>
         </div>
@@ -677,7 +694,8 @@
                     <div class="card-body text-center">
                         <i class="icon fas fa-money-bill-wave" style="font-size: 3rem; color: #007bff;"></i>
                         <h5 class="card-title">कर्ज से मुक्ति योजना:</h5>
-                        <p class="card-text">प्रत्येक सदस्य मासिक ₹1,000 का योगदान करेगा, जो कर्ज राहत में उपयोग होगा।</p>
+                        <p class="card-text">प्रत्येक सदस्य मासिक ₹1,000 का योगदान करेगा, जो कर्ज राहत में उपयोग होगा।
+                        </p>
                     </div>
                 </div>
             </div>
@@ -719,20 +737,21 @@
             </div>
         </div>
     </div>
-    
+
 
     <!-- How Your Contribution is Utilized Section -->
     <div class="container my-5" id="utilization">
         <h2 class="section-title text-center">आपके योगदान का उपयोग कैसे होता है?</h2>
         <h5 class="text-center">इन्फोग्राफिक और पाई चार्ट:</h5>
         <div class="text-center mb-4">
-            <img src="image.png" alt="Contribution Utilization Infographic" class="img-fluid">
+            <img src="pie_chart.png" alt="Contribution Utilization Infographic" class="img-fluid">
         </div>
         <ul class="list-unstyled text-center">
             <li>25% कर्ज माफी - "बैंकों और वित्तीय संस्थाओं से कर्ज निवारण में सहायक।"</li>
             <li>15% प्रशासनिक खर्च - "संगठन संचालन और सेवाओं को प्रभावी बनाए रखना।"</li>
             <li>10% आपातकालीन फंड - "आपातकालीन संकटों से निपटने के लिए तैयार।"</li>
-            <li>50% निवेश - "कृषि, पर्यटन, और फूड वेस्ट मैनेजमेंट जैसे क्षेत्रों में निवेश।"</li>
+            <li>20% सामाजिक कार्य - "समुदाय के विकास और कल्याण के लिए।"</li>
+            <li>30% निवेश - "कृषि, पर्यटन, और फूड वेस्ट मैनेजमेंट जैसे क्षेत्रों में निवेश।"</li>
         </ul>
     </div>
 
@@ -777,29 +796,31 @@
     </div>
 
 
-   <!-- Footer -->
-<footer class="text-center">
-    <div class="container">
-        <h5>संपर्क जानकारी</h5>
-        <p><strong>ईमेल:</strong> <a href="mailto:info@debtfreefoundation.com">info@debtfreefoundation.com</a></p>
-        <p><strong>फोन:</strong> <a href="https://wa.me/918427986010">91-8427986010</a></p>
-        
-            <a href="https://www.facebook.com/profile.php?id=61571589090667&mibextid=ZbWKwL" class="social-icon" target="blank">
-                <i class="fab fa-facebook-f fa-2x"></i> 
-            </a> 
-            <a href="https://www.instagram.com/wrinnrahat_foundation/?fbclid=IwZXh0bgNhZW0CMTEAAR2ittsRA-aG85bV3K71YrrFJeIUPLVxPMmJ-SyC1q1EJvVMiPXUl_FZT5c_aem_4ZVxHTo43_2iEoQdeGix1Q" class="social-icon" target="blank">
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <h5>संपर्क जानकारी</h5>
+            <p><strong>ईमेल:</strong> <a href="mailto:info@debtfreefoundation.com">info@debtfreefoundation.com</a></p>
+            <p><strong>व्हाट्सएप only:</strong> <a href="https://wa.me/918427986010">91-8427986010</a></p>
+
+            <a href="https://www.facebook.com/profile.php?id=61571589090667&mibextid=ZbWKwL" class="social-icon"
+                target="blank">
+                <i class="fab fa-facebook-f fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com/wrinnrahat_foundation/?fbclid=IwZXh0bgNhZW0CMTEAAR2ittsRA-aG85bV3K71YrrFJeIUPLVxPMmJ-SyC1q1EJvVMiPXUl_FZT5c_aem_4ZVxHTo43_2iEoQdeGix1Q"
+                class="social-icon" target="blank">
                 <i class="fab fa-instagram fa-2x"></i>
             </a>
-        </p>
-        <p><strong>Design & Develop By ALMA Creators</strong></p>
-    </div>
-</footer>
+            </p>
+            <p><strong>Design & Develop By ALMA Creators</strong></p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-    <script>
+    <!-- <script>
         function makePayment(amount) {
             const donorName = document.getElementById("donorName").value;
             const donorEmail = document.getElementById("donorEmail").value;
@@ -874,7 +895,7 @@
             }
         }
 
-    </script>
+    </script> -->
 </body>
 
 </html>
