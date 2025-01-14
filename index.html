@@ -406,6 +406,83 @@
             color: white;
             /* Change color on hover */
         }
+
+
+        /* Container styling */
+        #join {
+            border: 1px solid #007bff;;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        #join p {
+            font-size: 1.2rem;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Button styling */
+        .animated-button {
+            display: inline-block;
+            padding: 12px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .animated-button:hover {
+            background-color: #0056b3;
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Infinite animation effect */
+        .animated-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 300%;
+            height: 300%;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            animation: pulse 2.5s infinite;
+            z-index: 1;
+        }
+
+        .animated-button:hover::before {
+            animation: none;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 
@@ -518,13 +595,10 @@
 
 
     <!-- Join Us Section -->
-    <div class="container my-5" id="join">
+    <div class="container my-5 text-center" id="join">
         <h2 class="section-title">हमसे जुड़ें</h2>
         <p>आपका छोटा योगदान, बड़ा बदलाव। ₹1,000/माह से जुड़ें।</p>
-        <iframe src="https://forms.gle/v5Ka3xsXD4x6PUpDA" width="100%" height="800" frameborder="0" marginheight="0"
-            marginwidth="0">
-            Loading…
-        </iframe>
+        <a href="https://forms.gle/7afsd33xeiYbWNm27" target="_blank" class="animated-button">JOIN US</a>
     </div>
 
     <!-- Members Card Section -->
@@ -536,7 +610,8 @@
                 <h5 class="card-title" style="color: #007bff;">सदस्य जुड़ने की जानकारी</h5>
                 <p class="card-text">हमारे साथ जुड़ने वाले सदस्यों की जानकारी देखने के लिए नीचे दिए गए बटन पर क्लिक
                     करें।</p>
-                <a href="Contributions.html" class="btn btn-primary" style="background-color: #007bff; border: none;">सदस्य
+                <a href="Contributions.html" class="btn btn-primary"
+                    style="background-color: #007bff; border: none;">सदस्य
                     देखें</a>
             </div>
         </div>
@@ -647,7 +722,7 @@
 
 
     <!-- Display of Added Members Section -->
-    <div class="container my-5" id="members">
+    <!-- <div class="container my-5" id="members">
         <h2 class="section-title">सदस्य जोड़ने का प्रदर्शन</h2>
         <p>डायरेक्टर के आधार पर व्यवस्थित सदस्य का विवरण:</p>
         <div class="row">
@@ -682,7 +757,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Donation and Contribution Tracking Section -->
     <div class="container my-5" id="tracking">
@@ -811,7 +886,7 @@
     <footer class="text-center">
         <div class="container">
             <h5>संपर्क जानकारी</h5>
-            <p><strong>ईमेल:</strong> <a href="mailto:info@debtfreefoundation.com">info@debtfreefoundation.com</a></p>
+            <p><strong>ईमेल:</strong> <a href="mailto:info@wrinnrahat@gmail.com">info@wrinnrahat@gmail.com</a></p>
             <p><strong>व्हाट्सएप only:</strong> <a href="https://wa.me/918427986010">91-8427986010</a></p>
 
             <a href="https://www.facebook.com/profile.php?id=61571589090667&mibextid=ZbWKwL" class="social-icon"
@@ -823,7 +898,7 @@
                 <i class="fab fa-instagram fa-2x"></i>
             </a>
             </p>
-            <p><strong>Design & Develop By ALMA Creators</strong></p>
+            <p><strong><a href="https://almacreators.com">Design & Develop By ALMA Creators</a></strong></p>
         </div>
     </footer>
 
